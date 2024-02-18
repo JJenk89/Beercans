@@ -231,4 +231,13 @@
 	.open-popup {
 		display: block;
 	}
+
+	.tel-link {
+		color: #4e8098;
+	}
+
+	.git-logo {
+		color: #4e8098;
+		font-size: 1rem;
+	}
 }
