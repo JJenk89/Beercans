@@ -29,7 +29,7 @@ body {
 	background-color: var(--snow);
 	color: var(--snow);
 	text-shadow: 5px black;
-	background: url(./images/pexels-pixabay-159291.jpg) center no-repeat;
+	background: url(/images/pexels-pixabay-159291.jpg) center no-repeat;
 	background-size: cover;
 }
 
