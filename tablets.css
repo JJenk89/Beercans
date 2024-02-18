@@ -233,11 +233,11 @@
 	}
 
 	.tel-link {
-		color: #4e8098;
+		color: var(--afb);
 	}
 
 	.git-logo {
-		color: #4e8098;
+		color: var(--afb);
 		font-size: 1rem;
 	}
 }
