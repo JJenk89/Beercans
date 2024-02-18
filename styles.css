@@ -23,6 +23,12 @@ html {
 	scroll-behavior: smooth;
 }
 
+@-moz-document url-prefix() {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 20px;
@@ -31,6 +37,7 @@ body {
 	text-shadow: 5px black;
 	background: url(./images/pexels-pixabay-159291.jpg) center no-repeat;
 	background-size: cover;
+	-webkit-font-smoothing: antialiased;
 }
 
 p {
@@ -73,6 +80,15 @@ a.anchor {
 	position: relative;
 	top: -100svh;
 	visibility: hidden;
+}
+
+@-moz-document url-prefix() {
+	a.anchor {
+		display: block;
+		position: relative;
+		top: -100px;
+		visibility: hidden;
+	}
 }
 
 /* //   MENU    // */
@@ -339,13 +355,12 @@ form {
 }
 .sendBtn {
 	padding: 4px;
-	margin-top: 10px;
 	cursor: pointer;
 	text-align: center;
 	border: none;
 	outline: none;
 	max-width: 350px;
-	margin: auto;
+	margin: 10px auto;
 	background-color: rgba(255, 255, 255, 0.784);
 	font-family: inherit;
 	font-weight: 900;
