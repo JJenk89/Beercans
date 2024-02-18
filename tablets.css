@@ -29,6 +29,10 @@
 		font-size: 2rem;
 	}
 
+	h3 {
+		margin-top: 3rem;
+	}
+
 	p {
 		max-width: 45em;
 		text-align: center;
@@ -66,22 +70,18 @@
 		width: 100%;
 	}
 
-	section {
+	.section {
 		padding: 2rem 2rem;
 		font-size: 1.4rem;
+		margin: 4rem auto;
 	}
 
 	.about-us {
-		height: 100vh;
 		padding: 3rem;
-	}
-
-	.products {
-		height: 100vh;
 	}
 
 	.products p {
-		padding: 3rem;
+		padding: 2rem;
 	}
 
 	h3 {
@@ -233,11 +233,11 @@
 	}
 
 	.tel-link {
-		color: var(--afb);
+		color: #4e8098;
 	}
 
 	.git-logo {
-		color: var(--afb);
+		color: #4e8098;
 		font-size: 1rem;
 	}
 }
