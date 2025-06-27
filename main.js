@@ -6,7 +6,7 @@
 const burger = document.querySelector("#toggle");
 const icon = document.querySelector("#burger");
 const cross = document.querySelector("#cross");
-const nav = document.querySelector("nav");
+const nav = document.querySelector(".nav-bar");
 const menuOpt = document.querySelectorAll("li");
 const scrollToTop = document.querySelector("#scrollBtn");
 

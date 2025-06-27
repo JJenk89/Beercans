@@ -10,7 +10,14 @@
 	}
 
 	header {
-		display: block;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.logo {
+		width: 50%;
 	}
 	.icon {
 		display: none;
@@ -35,16 +42,20 @@
 
 	p {
 		max-width: 45em;
-		text-align: center;
 		padding: 0 auto;
 		margin-left: auto;
 		margin-right: auto;
 		line-height: 2em;
 	}
 
-	.nav-bar {
-		display: inline;
-		text-align: right;
+	.desktop-nav-bar {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: end;
+		margin-left: 5%;
+		width: 100%;
+		overflow: visible;
 	}
 
 	li {
@@ -90,7 +101,6 @@
 	}
 	p {
 		text-align: justify;
-		text-align: center;
 	}
 
 	/* // SLIDESHOW     // */
@@ -122,8 +132,7 @@
 		font-weight: bold;
 		padding: 0.5rem 0.75rem;
 		position: absolute;
-		top: 5rem;
-		left: 3rem;
+		top: 30%;
 	}
 
 	.contact {
