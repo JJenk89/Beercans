@@ -9,12 +9,18 @@ const cross = document.querySelector("#cross");
 const nav = document.querySelector(".nav-bar");
 const menuOpt = document.querySelectorAll("li");
 const scrollToTop = document.querySelector("#scrollBtn");
+const year = document.querySelector("#current-year");
+
+//SET CURRENT YEAR//
+const currentYear = new Date().getFullYear();
+year.textContent = currentYear;
 
 //MENU FUNCTION//
 burger.addEventListener("click", () => {
 	nav.classList.toggle("open");
 	icon.classList.toggle("hidden");
 	cross.classList.toggle("hidden");
+	document.body.classList.toggle("lock-scroll");
 });
 
 menuOpt.forEach((link) => {
@@ -22,6 +28,7 @@ menuOpt.forEach((link) => {
 		nav.classList.remove("open");
 		icon.classList.toggle("hidden");
 		cross.classList.toggle("hidden");
+		document.body.classList.remove("lock-scroll");
 	});
 });
 
